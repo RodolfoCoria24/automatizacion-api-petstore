@@ -38,7 +38,17 @@ Validar el correcto funcionamiento de los endpoints relacionados con la gestión
 | URL base | `https://petstore.swagger.io/v2` |
 | Recurso automatizado | `/pet` |
 | Formato de intercambio | JSON |
+---
 
+## 🧪 Casos de prueba automatizados
+
+| ID | Operación | Método HTTP | Endpoint | Resultado esperado |
+|---|---|---|---|---|
+| CP01 | Crear una mascota | `POST` | `/pet` | `200` |
+| CP02 | Consultar una mascota | `GET` | `/pet/{petId}` | `200` |
+| CP03 | Actualizar una mascota | `PUT` | `/pet` | `200` |
+| CP04 | Eliminar una mascota | `DELETE` | `/pet/{petId}` | `200` |
+| CP05 | Consultar una mascota eliminada | `GET` | `/pet/{petId}` | `404` |
 
 ---
 
