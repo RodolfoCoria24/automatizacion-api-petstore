@@ -157,17 +157,6 @@ A continuación se muestra la evidencia del reporte generado por **Serenity BDD*
 ![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-3.png)
 ---
 
-## 🚀 Posibles mejoras
-
-- Validar los campos del cuerpo de respuesta.
-- Incorporar escenarios negativos adicionales.
-- Utilizar modelos Java para construir los cuerpos JSON.
-- Configurar integración continua con GitHub Actions.
-- Agregar datos de prueba desde archivos externos.
-- Publicar automáticamente el reporte Serenity.
-
----
-
 ## 👨‍💻 Autor
 
 **Rodolfo Coria**
