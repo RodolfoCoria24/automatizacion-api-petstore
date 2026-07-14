@@ -154,7 +154,7 @@ A continuación se muestra la evidencia del reporte generado por **Serenity BDD*
 
 ![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-1.png)
 ![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-2.png)
-![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-3.png))
+![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-3.png)
 ---
 
 ## 🚀 Posibles mejoras
