@@ -39,17 +39,6 @@ Validar el correcto funcionamiento de los endpoints relacionados con la gestión
 | Recurso automatizado | `/pet` |
 | Formato de intercambio | JSON |
 
----
-
-## 🧪 Casos de prueba automatizados
-
-| ID | Caso de prueba | Método | Endpoint | Resultado esperado |
-|---|---|---:|---|---:|
-| CP01 | Crear una mascota | `POST` | `/pet` | `200` |
-| CP02 | Consultar la mascota creada | `GET` | `/pet/{petId}` | `200` |
-| CP03 | Actualizar los datos de la mascota | `PUT` | `/pet` | `200` |
-| CP04 | Eliminar la mascota creada | `DELETE` | `/pet/{petId}` | `200` |
-| CP05 | Verificar que la mascota eliminada no exista | `GET` | `/pet/{petId}` | `404` |
 
 ---
 
@@ -73,33 +62,9 @@ Validar código 404
 
 El identificador `petId` se genera durante la ejecución y se almacena en la memoria del actor de Serenity. De esta forma, las siguientes operaciones trabajan con el mismo registro creado por la prueba.
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-- **Java 17:** lenguaje de programación.
-- **Maven:** gestión de dependencias y ejecución del proyecto.
-- **Serenity BDD:** generación de reportes y administración de pruebas.
-- **Cucumber:** definición de escenarios en lenguaje Gherkin.
-- **Screenplay:** organización de actores, tareas, preguntas y habilidades.
-- **Rest Assured:** envío y validación de solicitudes HTTP.
-- **JUnit 4:** ejecución de los escenarios automatizados.
-- **IntelliJ IDEA:** entorno de desarrollo utilizado.
 
 ---
 
-## 🧱 Arquitectura del proyecto
-
-El proyecto está organizado con el patrón **Screenplay**:
-
-- **Actor:** representa al usuario que interactúa con la API.
-- **Ability:** permite que el actor consuma servicios REST mediante `CallAnApi`.
-- **Tasks:** contienen las acciones POST, GET, PUT y DELETE.
-- **Questions:** consultan el código de respuesta de la API.
-- **Step Definitions:** conectan los pasos Gherkin con las clases Java.
-- **Runner:** configura y ejecuta los escenarios de Cucumber.
-
----
 
 ## 📂 Estructura
 
@@ -129,76 +94,6 @@ automatizacion-api-petstore
 ├── .gitignore
 ├── pom.xml
 └── README.md
-```
-
----
-
-## ✅ Requisitos previos
-
-Antes de ejecutar el proyecto, se debe contar con:
-
-- JDK 17 o superior.
-- Apache Maven.
-- Git.
-- IntelliJ IDEA o cualquier IDE compatible con Maven.
-- Conexión a Internet para consumir la API.
-
-Puedes verificar las versiones instaladas con:
-
-```bash
-java -version
-mvn -version
-git --version
-```
-
----
-
-## 📥 Instalación
-
-Clona el repositorio:
-
-```bash
-git clone https://github.com/RodolfoCoria24/automatizacion-api-petstore.git
-```
-
-Ingresa a la carpeta del proyecto:
-
-```bash
-cd automatizacion-api-petstore
-```
-
-Descarga las dependencias y compila:
-
-```bash
-mvn clean compile
-```
-
----
-
-## ▶️ Ejecución de las pruebas
-
-Para ejecutar todos los escenarios:
-
-```bash
-mvn clean verify
-```
-
-También puedes ejecutar directamente la clase:
-
-```text
-src/test/java/org/example/RunnerTest.java
-```
-
-El Runner utiliza la etiqueta general:
-
-```java
-tags = "@pet"
-```
-
-Para ejecutar un caso específico, se puede cambiar temporalmente el tag. Por ejemplo:
-
-```java
-tags = "@CP01_Pet"
 ```
 
 ---
@@ -253,6 +148,15 @@ La automatización valida principalmente:
 
 ---
 
+## 📸 Evidencia de ejecución
+
+A continuación se muestra la evidencia del reporte generado por **Serenity BDD**, donde se observa que la prueba fue ejecutada correctamente.
+
+![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-1.png)
+![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-2.png)
+![Reporte Serenity](https://github.com/RodolfoCoria24/automatizacion-api-petstore/blob/main/reporte-serenity-2.png))
+---
+
 ## 🚀 Posibles mejoras
 
 - Validar los campos del cuerpo de respuesta.
@@ -275,6 +179,6 @@ La automatización valida principalmente:
 
 <div align="center">
 
-Proyecto académico de automatización de pruebas API con Serenity BDD.
+Proyecto de automatización de pruebas API .
 
 </div>
